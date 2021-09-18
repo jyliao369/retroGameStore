@@ -20,10 +20,10 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        info1: {
+        category: {
             type: DataTypes.STRING,
         },
-        info2: {
+        condition: {
             type: DataTypes.STRING,
         },
         price: {
@@ -35,20 +35,20 @@ Post.init(
             allowNull: false,
             defaultValue: DataTypes.NOW,
         },
-        // user_id: {
-        //     type: DataTypes.INTEGER,
-        //     references: {
-        //         model: 'user',
-        //         key: 'id',
-        //     },
-        // },
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'user',
+                key: 'id',
+            },
+        },
     },
     {
         sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'Post',
+        modelName: 'post',
     }
 );
 
