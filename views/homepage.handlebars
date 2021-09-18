@@ -1,9 +1,12 @@
 <div id= "main">
 {{#each posts}}
 <div id="card">
+    <h2>
+      <a href='/post/{{id}}'>{{title}}</a>
+    </h2>
     <p>Game Title: {{ title }}</p>
-    <P>Category: {{ info1 }}</P>
-    <p>Condition: {{ info2 }}</p>
+    <P>Category: {{ category }}</P>
+    <p>Condition: {{ condition }}</p>
     <p>Description: {{ description }}</p>
     <br>
 </div>

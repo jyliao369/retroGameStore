@@ -1,7 +1,6 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
-    console.log("it works");
-  
+
     const title = document.querySelector('#title').value.trim();
     const category = document.querySelector('#category').value.trim();
     const condition = document.querySelector('#condition').value.trim();
@@ -26,8 +25,12 @@ const newFormHandler = async (event) => {
   };
   
   const delButtonHandler = async (event) => {
+    console.log("HIIIIIIIII");
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
+
+      console.log(typeof id);
+      console.log(Number(id));
   
       const response = await fetch(`/api/posts/${id}`, {
         method: 'DELETE',
@@ -46,6 +49,6 @@ const newFormHandler = async (event) => {
     .addEventListener('submit', newFormHandler);
   
   document
-    .querySelector('.project-list')
+    .querySelector('.posts-list')
     .addEventListener('click', delButtonHandler);
   

@@ -43,19 +43,20 @@
 
   </div>
 
-  <h3>Current Projects:</h3>
+ 
 
   {{#if posts.length}}
-  <div class="col-md-6 project-list">
+  <div class="col-md-6 posts-list">
     
+    <h3>Current Projects:</h3>
 
-    {{#each posts}}
+    {{#each posts as |post|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/post/{{posts.id}}">{{posts.title}}</a></h4>
+        <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+        <button class="btn btn-sm btn-danger" data-id={{post.id}}>DELETE</button>
       </div>
     </div>
     {{/each}}
