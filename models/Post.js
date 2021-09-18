@@ -20,10 +20,10 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        category: {
+        info1: {
             type: DataTypes.STRING,
         },
-        condition: {
+        info2: {
             type: DataTypes.STRING,
         },
         price: {
@@ -48,7 +48,7 @@ Post.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'post',
+        modelName: 'Post',
     }
 );
 
