@@ -1,14 +1,17 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
+    console.log("it works");
   
-    const name = document.querySelector('#project-name').value.trim();
-    const needed_funding = document.querySelector('#project-funding').value.trim();
-    const description = document.querySelector('#project-desc').value.trim();
+    const title = document.querySelector('#title').value.trim();
+    const category = document.querySelector('#category').value.trim();
+    const condition = document.querySelector('#condition').value.trim();
+    const price = document.querySelector('#price').value.trim();
+    const description = document.querySelector('#desc').value.trim();
   
-    if (name && needed_funding && description) {
-      const response = await fetch(`/api/projects`, {
+    if (title && category && condition && price && description) {
+      const response = await fetch(`/api/posts`, {
         method: 'POST',
-        body: JSON.stringify({ name, needed_funding, description }),
+        body: JSON.stringify({ title, category, condition, price, description }),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -26,7 +29,7 @@ const newFormHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
-      const response = await fetch(`/api/projects/${id}`, {
+      const response = await fetch(`/api/posts/${id}`, {
         method: 'DELETE',
       });
   
@@ -39,7 +42,7 @@ const newFormHandler = async (event) => {
   };
   
   document
-    .querySelector('.new-project-form')
+    .querySelector('.new-post-form')
     .addEventListener('submit', newFormHandler);
   
   document
