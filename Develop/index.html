@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <title>RGMarket</title>
+</head>
+<body>
+  <header>
+    <!--Nav bar containing website logo, searchbar, create listing, sign up, and log in buttons
+        Uses bootstrap+bulma for styling-->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="container">
+      <div class="navbar-brand">
+          <img src="/Users/crazynuget/Desktop/Projects/Retro-Game-Market/images/RGMarket.png" width="300" height="65">
+        
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-item">
+        <input class="input is-rounded" style="width: 100%;" type="text" placeholder="Search...">
+      </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-info">
+                <strong>Create Listing</strong>
+              </a>
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </nav>
+  </header>
+<!--Two columns. Left is 1/4 size containing the game categories. Right is 3/4 containing the front page of listings-->
+  <div class="columns">
+    <div class="column is-one-quarter has-text-centered">
+        <p class="title is-2 is-spaced has-text-grey-dark">Categories</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">Action</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">Adventure</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">RPG</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">Simulation</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">Sports</p>
+    </div>
+    <div class="column is-flex-wrap-wrap has-text-centered is-flex-direction-row">
+        <h2 class="title-is-2">Listings</h2>
+        
+    </div>
+  </div>
+</body>
+</html>
