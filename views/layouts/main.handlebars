@@ -1,55 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Retro Flip</title>
-  <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="/css/jass.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>RGMarket</title>
 </head>
-
 <body>
+  <header>
+    <!--Nav bar containing website logo, searchbar, create listing, sign up, and log in buttons
+        Uses bootstrap+bulma for styling-->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="container">
+      <div class="navbar-brand">
+          {{!-- <img src="Retro-Game-Market\images\RGMarket.png" width="300" height="65"> --}}
+        <a href="/" class="title is-1">Retro Game Market</a>
+        
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-  <div class="flex-column justify-space-around">
+      <div class="navbar-item">
+        <input class="input is-rounded" style="width: 100%;" type="text" placeholder="Search...">
+      </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
 
-    <header class="display-flex justify-space-between align-center p-2">
+            <a href="/">Home</a>
+            {{#if logged_in}}
+            <a href="/profile">profile</a>     
+              {{!-- <a class="button is-info">
+                <strong>Create Listing</strong>
+              </a> --}}
+              <button class="no-button" id="logout">logout</button>
+            {{else}}
+              {{!-- <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a> --}}
+              <a href="/login" class="button is-light">
+                Login
+              </a>
+            {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </nav>
+  </header>
+<!--Two columns. Left is 1/4 size containing the game categories. Right is 3/4 containing the front page of listings-->
+  {{!-- <div class="columns">
+    <div class="column is-one-quarter has-text-centered">
+        <p class="title is-2 is-spaced has-text-grey-dark">Categories</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">Action</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">Adventure</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">RPG</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">Simulation</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">Sports</p>
+    </div>
+    <div class="column is-flex-wrap-wrap has-text-centered is-flex-direction-row">
+        <h2 class="title-is-2">Listings</h2>
+        
+    </div>
+  </div> --}}
 
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">Retro Flip! Sell and Buy Retro Games and More!!</a>
-      </h1>
-
-      <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
-
-    </header>
-
-    <main>
-      <div>
+  <main>
+    <div class="box">
+      <div class="column is-flex-wrap-wrap has-text-centered is-flex-direction-row">
         <!-- Render the sub layout -->
         {{{ body }}}
       </div>
+    </div>
+      
       
     </main>
 
     <footer>
       
     </footer>
-    
-  </div>
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>
-
 </html>
