@@ -1,5 +1,18 @@
-<div id= "main">
-{{#each posts}}
+<!--Two columns. Left is 1/4 size containing the game categories. Right is 3/4 containing the front page of listings-->
+<div id="main">
+  <div class="columns">
+    <div class="column is-one-quarter has-text-centered">
+        <p class="title is-2 is-spaced has-text-grey-dark">Categories</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">Action</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">Adventure</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">RPG</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">Simulation</p>
+        <p class="subtitle is-4 is-spaced has-text-grey-light is-underlined">Sports</p>
+    </div>
+
+    <div class="column is-flex-wrap-wrap has-text-centered is-flex-direction-row">
+        <h2 class="title-is-2">Listings</h2>
+        {{#each posts}}
 <div id="card">
     <h2>
       <a href='/post/{{id}}'>{{title}}</a>
@@ -10,7 +23,7 @@
     <p>Description: {{ description }}</p>
     <br>
 </div>
-{{/each}}
+        {{/each}}
+    </div>
+  </div>
 </div>
-
-
