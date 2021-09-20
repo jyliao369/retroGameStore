@@ -21,13 +21,14 @@ router.get('/', async (req, res) => {
 });
 
 // getting a single post based on id
+// can be used to pull a posting's listing
 router.get('/post/:id', async (req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id, {
             include: [
                 {
                     model: User,
-                    attributes: ['title'],
+                    attributes: ['username'],
                 },
             ],
         });
