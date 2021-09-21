@@ -63,7 +63,13 @@ router.get('/profile', withAuth, async (req, res) => {
     }
 });
 
-router.get('/signup', (req, res) =>{
+router.get('/posting', (req, res) => {
+    res.render('posting', {
+        logged_in: true
+    });
+});
+
+router.get('/signup', (req, res) => {
     if (req.session.logged_in) {
         res.direct('/profile');
         return;
@@ -73,7 +79,7 @@ router.get('/signup', (req, res) =>{
 
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {
-        res.direct('/profile');
+        res.render('login');
         return;
     }
     res.render('login');

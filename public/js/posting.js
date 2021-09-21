@@ -1,4 +1,4 @@
-const newFormHandler = async (event) => {
+const newPostHandler = async (event) => {
     event.preventDefault();
 
     const title = document.querySelector('#title').value.trim();
@@ -23,28 +23,7 @@ const newFormHandler = async (event) => {
       }
     }
   };
-  
-  const delButtonHandler = async (event) => {
-    if (event.target.hasAttribute('data-id')) {
-      const id = event.target.getAttribute('data-id');
 
-      const response = await fetch(`/api/posts/${id}`, {
-        method: 'DELETE',
-      });
-  
-      if (response.ok) {
-        document.location.replace('/profile');
-      } else {
-        alert('Failed to delete project');
-      }
-    }
-  };
-  
   document
-    .querySelector('.new-post-form')
-    .addEventListener('submit', newFormHandler);
-  
-  document
-    .querySelector('.posts-list')
-    .addEventListener('click', delButtonHandler);
-  
+    .querySelector('.posting-form')
+    .addEventListener('submit', newPostHandler);
