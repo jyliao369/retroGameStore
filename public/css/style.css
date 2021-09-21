@@ -30,9 +30,6 @@ header, .project:not(:last-child) {
   justify-content: space-evenly;
 }
 
-#card {
-  
-}
 
 #login {
   margin: 5px;
