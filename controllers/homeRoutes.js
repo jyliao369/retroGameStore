@@ -20,6 +20,29 @@ router.get('/', async (req, res) => {
     }
 });
 
+// // This should get all the post based on certain criteria
+router.get('/:category', async (req, res) => {
+    console.log("PARAMS: ", req.params)
+    try {
+        const postData = await Post.findAll();
+
+        // Serialize data so the template can read it
+        // const posts = postData.map((post) => post.get({ plain: true }));
+
+        const posts = postData.filter(function (post) {
+            return post.category === req.params.category;
+        });
+        
+        res.render('homepage', {
+            posts,
+            logged_in: req.session.logged_in
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+
 // getting a single post based on id
 // can be used to pull a posting's listing
 router.get('/post/:id', async (req, res) => {
@@ -34,6 +57,7 @@ router.get('/post/:id', async (req, res) => {
         });
 
         const post = postData.get({ plain: true });
+
         res.render('post', {
             ...post,
             logged_in: req.session.logged_in

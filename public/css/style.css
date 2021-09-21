@@ -42,3 +42,7 @@ header, .project:not(:last-child) {
   display: flex;
   margin: 5px;
 }
+
+#listingpage {
+  margin: 5px;
+}

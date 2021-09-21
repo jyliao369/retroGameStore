@@ -1,72 +1,82 @@
 [
     {
         "title": "FF7",
-        "description": "PS1 JPRG Classic",
+        "system": "PS4",
         "category": "Sony",
         "condition": "CIB - Good Condition",
-        "price": 100
+        "price": 100,
+        "description": "PS1 JPRG Classic"
     },
     {
         "title": "Super Mario 64",
-        "description": "Classic 3D Platformer",
+        "system": "N64",
         "category": "Nintendo",
         "condition": "Loose",
-        "price": 35
+        "price": 35,
+        "description": "Classic 3D Platformer"
     },
     {
         "title": "Sonic the Hedgehog",
-        "description": "Fastest hedgehog alive",
+        "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
-        "price": 20
+        "price": 20,
+        "description": "Fastest hedgehog alive"
     },
     {
         "title": "Sonic the Hedgehog",
-        "description": "Fastest hedgehog alive",
+        "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
-        "price": 20
+        "price": 20,
+        "description": "Fastest hedgehog alive"
     },
     {
         "title": "Sonic the Hedgehog",
-        "description": "Fastest hedgehog alive",
+        "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
-        "price": 20
+        "price": 20,
+        "description": "Fastest hedgehog alive"
     },
     {
         "title": "Sonic the Hedgehog",
-        "description": "Fastest hedgehog alive",
+        "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
-        "price": 20
+        "price": 20,
+        "description": "Fastest hedgehog alive"
     },
     {
         "title": "Sonic the Hedgehog",
-        "description": "Fastest hedgehog alive",
+        "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
-        "price": 20
+        "price": 20,
+        "description": "Fastest hedgehog alive"
     },
     {
         "title": "Sonic the Hedgehog",
-        "description": "Fastest hedgehog alive",
+        "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
-        "price": 20
+        "price": 20,
+        "description": "Fastest hedgehog alive"
     },
     {
         "title": "Sonic the Hedgehog",
-        "description": "Fastest hedgehog alive",
+        "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
-        "price": 20
+        "price": 20,
+        "description": "Fastest hedgehog alive"
     },
     {
         "title": "Sonic the Hedgehog",
-        "description": "Fastest hedgehog alive",
+        "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
-        "price": 20
+        "price": 20,
+        "description": "Fastest hedgehog alive"
     }
 ]

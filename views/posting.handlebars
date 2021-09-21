@@ -11,12 +11,47 @@
 
       <div class="form-group">
         <label for="project-funding">Category:</label>
-        <input class="form-input" type="text" id="category" name="game-category" />
+        <select name="condition" id="category">
+          <option>Select Category</option>
+          <option value="Playstation">Playstation</option>
+          <option value="Nintendo">Nintendo</option>
+          <option value="Sega">Sega</option>
+        </select>
+
+        {{!-- <input class="form-input" type="text" id="category" name="game-category" /> --}}
+      
       </div>
+
+      {{!-- This is for the system --}}
+      <div class="form-group">
+        <label for="project-funding">System:</label>
+        <select name="condition" id="system">
+          <option>Select System</option>
+          <option value="PS4">PS4</option>
+          <option value="PS3">PS3</option>
+          <option value="GCB">Gamecube</option>
+          <option value="DS">DS</option>
+          <option value="3DS">3DS</option>
+          <option value="Gameboy">Gameboy</option>
+          <option value="Gameboy Advance">Gameboy Advance</option>
+        </select>
+
+        {{!-- <input class="form-input" type="text" id="category" name="game-category" /> --}}
+      
+      </div>
+    
 
       <div class="form-group">
         <label for="project-funding">Condition:</label>
-        <input class="form-input" type="text" id="condition" name="game-condition" />
+        <select name="condition" id="condition">
+          <option>Choose Condition</option>
+          <option value="Loose">Loose</option>
+          <option value="(CIB) Complete In Box">(CIB) Complete In Box</option>
+          <option value="Brand New">Brand New</option>
+        </select>
+
+        {{!-- <input class="form-input" type="text" id="condition" name="game-condition" /> --}}
+
       </div>
 
       <div class="form-group">
