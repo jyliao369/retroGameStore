@@ -88,6 +88,7 @@ router.get('/genre/:category', async (req, res) => {
     }
 });
 
+
 // This is for conditions of the posting
 router.get('/condition/:category', async (req, res) => {
     console.log("PARAMS: ", req.params)
