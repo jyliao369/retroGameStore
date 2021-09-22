@@ -4,6 +4,7 @@ const newPostHandler = async (event) => {
     const title = document.querySelector('#title').value.trim();
     const category = document.querySelector('#category').value.trim();
     const system = document.querySelector('#system').value.trim();
+    const genre = document.querySelector('#genre').value.trim();
     const condition = document.querySelector('#condition').value.trim();
     const price = document.querySelector('#price').value.trim();
     const description = document.querySelector('#desc').value.trim();
@@ -11,7 +12,7 @@ const newPostHandler = async (event) => {
     if (title && category && condition && price && description) {
       const response = await fetch(`/api/posts`, {
         method: 'POST',
-        body: JSON.stringify({ title, category, system, condition, price, description }),
+        body: JSON.stringify({ title, category, system, genre, condition, price, description }),
         headers: {
           'Content-Type': 'application/json',
         },

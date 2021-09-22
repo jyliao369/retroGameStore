@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Post } = require('../../models');
+const { beforeBulkDestroy } = require('../../models/User');
 const withAuth = require('../../utils/auth');
 
 // This gets all of the post in the database

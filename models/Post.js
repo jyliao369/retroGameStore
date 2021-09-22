@@ -23,6 +23,9 @@ Post.init(
         category: {
             type: DataTypes.STRING,
         },
+        genre: {
+            type: DataTypes.STRING,
+        },
         condition: {
             type: DataTypes.STRING,
         },

@@ -4,6 +4,7 @@
         "system": "PS4",
         "category": "Sony",
         "condition": "CIB - Good Condition",
+        "genre": "RPG",
         "price": 100,
         "description": "PS1 JPRG Classic"
     },
@@ -12,6 +13,7 @@
         "system": "N64",
         "category": "Nintendo",
         "condition": "Loose",
+        "genre": "Platformer",
         "price": 35,
         "description": "Classic 3D Platformer"
     },
@@ -20,6 +22,7 @@
         "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
+        "genre": "Platformer",
         "price": 20,
         "description": "Fastest hedgehog alive"
     },
@@ -28,6 +31,9 @@
         "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
+
+        "genre": "Platformer",
+
         "price": 20,
         "description": "Fastest hedgehog alive"
     },
@@ -36,6 +42,7 @@
         "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
+        "genre": "Platformer",
         "price": 20,
         "description": "Fastest hedgehog alive"
     },
@@ -44,6 +51,7 @@
         "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
+        "genre": "Platformer",
         "price": 20,
         "description": "Fastest hedgehog alive"
     },
@@ -52,6 +60,7 @@
         "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
+        "genre": "Platformer",
         "price": 20,
         "description": "Fastest hedgehog alive"
     },
@@ -60,6 +69,7 @@
         "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
+        "genre": "Platformer",
         "price": 20,
         "description": "Fastest hedgehog alive"
     },
@@ -68,6 +78,7 @@
         "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
+        "genre": "Platformer",
         "price": 20,
         "description": "Fastest hedgehog alive"
     },
@@ -76,6 +87,7 @@
         "system": "Sega Genesis",
         "category": "Sega",
         "condition": "CIB - Good Condition",
+        "genre": "Platformer",
         "price": 20,
         "description": "Fastest hedgehog alive"
     }
