@@ -1,53 +1,74 @@
-<!--Creating a column half of page for an image, or something to fill space
-    Currently not working as expected. Will resolve later-->
-<div class="column is-half">
-        
-</div>
+<div class="col-md-6">
 
-<!--Making listing half of page to the right-->
-<div class="column is-half">
-
-  <!--Placed listing in box for style-->
-  <div class="box">
-
-    <h3 class="title is-1">Create a Listing:</h3>
+    <h3>Create a New Project:</h3>
 
     <form class="form posting-form">
-      <!--Changed classes of labels to subtitles is-4
-          Added "input" and "is-hovered" to input classes-->
+
       <div class="form-group">
-        <label for="title" class="subtitle is-4" width="50%">Game Title:</label>
-        <input class="input is-hovered form-input" type="text" id="title" name="game-title" placeholder="Title" />
+        <label for="title">Game Title:</label>
+        <input class="form-input" type="text" id="title" name="game-title" />
       </div>
 
       <div class="form-group">
-        <label for="project-funding" class="subtitle is-4">Category:</label>
-        <input class="input is-hovered form-input" type="text" id="category" name="game-category" placeholder="Action, RPG..." />
+        <label for="project-funding">Category:</label>
+        <select name="condition" id="category">
+          <option>Select Category</option>
+          <option value="Playstation">Playstation</option>
+          <option value="Nintendo">Nintendo</option>
+          <option value="Sega">Sega</option>
+        </select>
+
+        {{!-- <input class="form-input" type="text" id="category" name="game-category" /> --}}
+      
+      </div>
+
+      {{!-- This is for the system --}}
+      <div class="form-group">
+        <label for="project-funding">System:</label>
+        <select name="condition" id="system">
+          <option>Select System</option>
+          <option value="PS4">PS4</option>
+          <option value="PS3">PS3</option>
+          <option value="GCB">Gamecube</option>
+          <option value="DS">DS</option>
+          <option value="3DS">3DS</option>
+          <option value="Gameboy">Gameboy</option>
+          <option value="Gameboy Advance">Gameboy Advance</option>
+        </select>
+
+        {{!-- <input class="form-input" type="text" id="category" name="game-category" /> --}}
+      
+      </div>
+    
+
+      <div class="form-group">
+        <label for="project-funding">Condition:</label>
+        <select name="condition" id="condition">
+          <option>Choose Condition</option>
+          <option value="Loose">Loose</option>
+          <option value="(CIB) Complete In Box">(CIB) Complete In Box</option>
+          <option value="Brand New">Brand New</option>
+        </select>
+
+        {{!-- <input class="form-input" type="text" id="condition" name="game-condition" /> --}}
+
       </div>
 
       <div class="form-group">
-        <label for="project-funding" class="subtitle is-4">Condition:</label>
-        <input class="input is-hovered form-input" type="text" id="condition" name="game-condition" placeholder="Poor, Good, Perfect..." />
+        <label for="project-funding">Price ($):</label>
+        <input class="form-input" type="number" id="price" name="game-price" />
       </div>
 
       <div class="form-group">
-        <label for="project-funding" class="subtitle is-4">Price:</label>
-        <input class="input is-hovered form-input" type="number" id="price" name="game-price" placeholder="$" />
+        <label for="project-desc">Description:</label>
+        <textarea class="form-input" id="desc" name="game-desc"></textarea>
       </div>
 
       <div class="form-group">
-        <label for="project-desc" class="subtitle is-4">Description:</label>
-        <textarea class="input is-hovered form-input" id="desc" name="game-desc" placeholder="e.g. This game was used when..."></textarea>
-      </div>
-
-      <!--"btn" class changed to "button" class-->
-      <div class="form-group">
-        <button type="submit" class="button is-primary">Create</button>
+        <button type="submit" class="btn btn-primary">Create</button>
       </div>
       
     </form>
-
-  </div>
 
 </div>
 
