@@ -88,6 +88,29 @@ router.get('/genre/:category', async (req, res) => {
     }
 });
 
+
+// This is for conditions of the posting
+router.get('/condition/:category', async (req, res) => {
+    console.log("PARAMS: ", req.params)
+    try {
+        const postData = await Post.findAll();
+
+        const filteredPosts = postData.filter(function (post) {
+            return post.condition === req.params.category;
+        });
+
+        // Serialize data so the template can read it
+        const posts = filteredPosts.map((post) => post.get({ plain: true }));
+        
+        res.render('homepage', {
+            posts,
+            logged_in: req.session.logged_in
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 // getting a single post based on id
 // can be used to pull a posting's listing
 router.get('/post/:id', async (req, res) => {
