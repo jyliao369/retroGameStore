@@ -1,39 +1,53 @@
-<div class="col-md-6">
+<!--Creating a column half of page for an image, or something to fill space
+    Currently not working as expected. Will resolve later-->
+<div class="column is-half">
+        
+</div>
 
-    <h3>Create a New Project:</h3>
+<!--Making listing half of page to the right-->
+<div class="column is-half">
+
+  <!--Placed listing in box for style-->
+  <div class="box">
+
+    <h3 class="title is-1">Create a Listing:</h3>
 
     <form class="form posting-form">
-
+      <!--Changed classes of labels to subtitles is-4
+          Added "input" and "is-hovered" to input classes-->
       <div class="form-group">
-        <label for="title">Game Title:</label>
-        <input class="form-input" type="text" id="title" name="game-title" />
+        <label for="title" class="subtitle is-4" width="50%">Game Title:</label>
+        <input class="input is-hovered form-input" type="text" id="title" name="game-title" placeholder="Title" />
       </div>
 
       <div class="form-group">
-        <label for="project-funding">Category:</label>
-        <input class="form-input" type="text" id="category" name="game-category" />
+        <label for="project-funding" class="subtitle is-4">Category:</label>
+        <input class="input is-hovered form-input" type="text" id="category" name="game-category" placeholder="Action, RPG..." />
       </div>
 
       <div class="form-group">
-        <label for="project-funding">Condition:</label>
-        <input class="form-input" type="text" id="condition" name="game-condition" />
+        <label for="project-funding" class="subtitle is-4">Condition:</label>
+        <input class="input is-hovered form-input" type="text" id="condition" name="game-condition" placeholder="Poor, Good, Perfect..." />
       </div>
 
       <div class="form-group">
-        <label for="project-funding">Price ($):</label>
-        <input class="form-input" type="number" id="price" name="game-price" />
+        <label for="project-funding" class="subtitle is-4">Price:</label>
+        <input class="input is-hovered form-input" type="number" id="price" name="game-price" placeholder="$" />
       </div>
 
       <div class="form-group">
-        <label for="project-desc">Description:</label>
-        <textarea class="form-input" id="desc" name="game-desc"></textarea>
+        <label for="project-desc" class="subtitle is-4">Description:</label>
+        <textarea class="input is-hovered form-input" id="desc" name="game-desc" placeholder="e.g. This game was used when..."></textarea>
       </div>
 
+      <!--"btn" class changed to "button" class-->
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
+        <button type="submit" class="button is-primary">Create</button>
       </div>
       
     </form>
+
+  </div>
 
 </div>
 

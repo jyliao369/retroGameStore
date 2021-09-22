@@ -1,23 +1,33 @@
 <div class="columns is-centered row" id="login">
     <div class="column is-half">
       <form class="form login-form">
-        <div class="form-group">
+        <div class="control has-icons-left form-group">
             <p class="title is-2 has-text-centered">Login to RGMarket</p>
             <p for="email-login" class="subtitle is-4">Email:</p>
-            <input class="input is-rounded form-input" style="width: 100%;" type="text" id="email-login" placeholder="user@email.com">
+            <input class="input is-rounded form-input" style="width: 100%;" type="email" id="email-login" placeholder="user@email.com">
+            <!--Email icon-->
+            <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+    </span>
         </div>
-
-        <div class="form-group">
+      <div class="field">
+        <div class="control has-icons-left form-group">
             <p for="password-login" class="subtitle is-4">Password:</p>
-            <input class="input is-rounded form-input" style="width: 100%;" type="text" id="password-login" placeholder="Password">
+            <input class="input is-rounded form-input" style="width: 100%;" type="password" id="password-login" placeholder="Password">
+            <!--Password icon-->
+            <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
         </div>
+      </div>
 
+      <div class="field">
         <div class="form-group">
             <button class="button is-info" type="submit">
                 <strong>Sign In</strong>
             </button>
         </div>
-
+      </div>
+      
         <div class="form-group">
             <p class="subtitle is-4">Don't have an account?</p>
             <button class="button is-primary" href='/signup'>
@@ -56,47 +66,8 @@
 
     </div> --}}
 
-<<<<<<< HEAD
-  {{!-- <div class="columns is-centered row" id="login">
-    <div class="column is-half">
-      <form class="form signup-form">
-            <p class="title is-2 has-text-centered">Sign up for RGMarket</p>
-
-        <div class="form-group">
-            <p for="name-signup" class="subtitle is-4">Username:</p>
-            <input class="input is-rounded form-input" style="width: 100%;" type="text" id="name-signup" placeholder="Username">
-        </div>
-
-        <div class="form-group">
-            <p for="email-signup" class="subtitle is-4">Email:</p>
-            <input class="input is-rounded form-input" style="width: 100%;" type="text" id="email-signup" placeholder="user@email.com">
-        </div>
-
-        <div class="form-group">
-            <p for="password-signup" class="subtitle is-4">Password:</p>
-            <input class="input is-rounded form-input" style="width: 100%;" type="text" id="password-signup" placeholder="Password">
-        </div>
-
-        <div class="form-group">
-            <button class="button is-info" type="submit">
-                <strong>Sign Up</strong>
-            </button>
-        </div>
-
-        {{!-- <div class="form-group">
-            <p class="subtitle is-4">Already have an account?</p>
-            <button class="button is-primary" href='/login'>
-                <strong>Login Here</strong>
-            </button>
-        </div> --}}
-        
-      </form>
-    </div>
-  </div> --}}
-=======
 </div>
 
->>>>>>> main
 
 
 <script src="./js/login.js"></script>
