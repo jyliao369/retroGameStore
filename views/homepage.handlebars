@@ -5,7 +5,7 @@
     <div class="column is-one-quarter has-text-centered">
 
       {{!-- Categories of games  --}}
-      <p class="title is-2 is-spaced has-text-grey-dark">Categories</p>
+      <p class="title is-3 is-spaced has-text-grey-dark">Categories</p>
       <a href='/category/Nintendo' class="subtitle is-5 is-spaced has-text-grey-light">Nintendo</a>
       <br>
       <br>
@@ -26,7 +26,7 @@
       <br>
 
       {{!-- Genre of games  --}}
-      <p class="title is-2 is-spaced has-text-grey-dark">Genre</p>
+      <p class="title is-3 is-spaced has-text-grey-dark">Genre</p>
       <a href='/genre/Action' class="subtitle is-5 is-spaced has-text-grey-light">Action</a>
       <br>
       <br>
@@ -59,7 +59,7 @@
       <br>
 
       {{!-- Systems for the games  --}}
-      <p class="title is-2 is-spaced has-text-grey-dark">System</p>
+      <p class="title is-3 is-spaced has-text-grey-dark">System</p>
       <a href='/system/NES' class="subtitle is-5 is-spaced has-text-grey-light">NES</a>
       <br>
       <br>
@@ -113,7 +113,7 @@
       <br>
       
       {{!-- Condition of games  --}}
-      <p class="title is-2 is-spaced has-text-grey-dark">Condition</p>
+      <p class="title is-3 is-spaced has-text-grey-dark">Condition</p>
       <a href='/condition/CIB - Good Condition' class="subtitle is-5 is-spaced has-text-grey-light">CIB (Complete In Box)</a>
       <br>
       <br>
@@ -126,26 +126,26 @@
 
     </div>
 
-    <div class="column is-flex-wrap-wrap has-text-centered is-flex-direction-row" id="listingpage">
+    <div class="column">
+      <h2 class="title is-3 has-text-centered	">Listings</h2>
       
-      <h2 class="title-is-2">Listings</h2>
-      
-      {{#each posts}}
-      <div id="card">
-        <h2>
-          <a href='/post/{{id}}'>{{title}}</a>
-        </h2>
-        <p>System: {{ system }}</p>
-        <P>Category: {{ category }}</P>
-        <p>Condition: {{ condition }}</p>
-        <p>Genre: {{ genre }}</p>
-        <p>Description: {{ description }}</p>
-        <p>Price: {{ price }}$</p>
-        <br>
+      <div class="columns is-multiline" id="listingpage">
+        {{#each posts}}
+        <div class="column is-one-quarter" id="card">
+          <h2>
+            <a href='/post/{{id}}'>{{title}}</a>
+          </h2>
+          <p>System: {{ system }}</p>
+          <P>Category: {{ category }}</P>
+          <p>Condition: {{ condition }}</p>
+          <p>Genre: {{ genre }}</p>
+          <p>Description: {{ description }}</p>
+          <p>Price: {{ price }}$</p>
+          <br>
+        </div>
+        {{/each}}
       </div>
-      {{/each}}
-
     </div>
-
+    
   </div>
 </div>
