@@ -30,6 +30,9 @@ header, .project:not(:last-child) {
   justify-content: space-evenly;
 }
 
+#card {
+  
+}
 
 #login {
   margin: 5px;
@@ -40,7 +43,6 @@ header, .project:not(:last-child) {
   margin: 5px;
 }
 
-.navbar-item {
-  display: flex;
-  justify-content: space-around;
+#listingpage {
+  margin: 5px;
 }

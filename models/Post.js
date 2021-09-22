@@ -16,7 +16,7 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        description: {
+        system: {
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -28,6 +28,10 @@ Post.init(
         },
         price: {
             type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+        description: {
+            type: DataTypes.STRING,
             allowNull: false,
         },
         date_created: {
