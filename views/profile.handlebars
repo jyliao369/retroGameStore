@@ -1,68 +1,75 @@
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{username}}!</h2>
+<!-- Banner at top of screen -->
+<section class="hero is-info row">
+  <div class="hero-body col-auto">
+    <p class="title has-text-centered">
+      RGMarket Profile
+    </p>
+    <p class="subtitle has-text-centered">
+      Welcome, {{username}}!
+    </p>
   </div>
-</div>
+</section>
 
-<div class="row mt-4" id='mainbody'>
 
-  <div class="col-md-6">
+<div class="columns">
+  <!--Left Column. Contains listings-->
+  <div class="column">
+    <form class="box">
+      <div class="row mt-4" id='mainbody'>
 
-    {{!-- <h3>Create a New Project:</h3> --}}
+        {{#if posts.length}}
+        <div class="col-md-6 posts-list">
+          
+          <h3 class="title is-3">Your Listings:</h3>
 
-    <form class="form new-post-form">
-      {{!-- <div class="form-group">
-        <label for="title">Game Title:</label>
-        <input class="form-input" type="text" id="title" name="game-title" />
+          {{#each posts as |post|}}
+          <div class="row mb-2">
+            <div id="test" class="col-md-8">
+              <h4 class="subtitle is-5"><a href="/post/{{post.id}}">{{post.title}}</a></h4>
+            </div>
+            <div class="col-md-4">
+              <button class="button is-danger is-small btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+        {{/if}}
+
       </div>
 
-      <div class="form-group">
-        <label for="project-funding">Category:</label>
-        <input class="form-input" type="text" id="category" name="game-category" />
-      </div>
-
-      <div class="form-group">
-        <label for="project-funding">Condition:</label>
-        <input class="form-input" type="text" id="condition" name="game-condition" />
-      </div>
-
-      <div class="form-group">
-        <label for="project-funding">Price ($):</label>
-        <input class="form-input" type="number" id="price" name="game-price" />
-      </div>
-
-      <div class="form-group">
-        <label for="project-desc">Description:</label>
-        <textarea class="form-input" id="desc" name="game-desc"></textarea>
-      </div>
-
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div> --}}
     </form>
 
   </div>
+  
 
- 
+  <!--Right column. Contains profile settings-->
+  <div class="column">
+    <form class="box">
+      <a class="subtitle is-5">Change your password:</a>
+        <div class="field">
+          <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="e.g. alex@example.com">
+            </div>
+        </div>
 
-  {{#if posts.length}}
-  <div class="col-md-6 posts-list">
-    
-    <h3>Current Projects:</h3>
+        <div class="field">
+          <label class="label">Current Password</label>
+            <div class="control">
+              <input class="input" type="password" placeholder="********">
+            </div>
+        </div>
 
-    {{#each posts as |post|}}
-    <div class="row mb-2">
-      <div id="test" class="col-md-8">
-        <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
+        <div class="field">
+          <label class="label">New Password</label>
+            <div class="control">
+              <input class="input" type="password" placeholder="********">
+            </div>
+        </div>
+
+        <button class="button is-primary">Change password</button>
+    </form>
   </div>
-  {{/if}}
-
 </div>
 
 <script src="./js/profile.js"></script>
