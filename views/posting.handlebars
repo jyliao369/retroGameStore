@@ -4,126 +4,124 @@
         
 </div>
 
-<div class="col-md-6">
+<div class="columns is-centered col-md-6">
   <!--Making listing half of page to the right-->
   <div class="column is-half">
 
   <!--Placed listing in box for style-->
-  <div class="box">
+    <div class="box">
 
-    <h3 class="title is-1">Create a Listing:</h3>
+      <h3 class="title is-1">Create a Listing:</h3>
 
-    <form class="form posting-form">
+      <form class="form posting-form">
 
-      <!--Changed classes of labels to subtitles is-4
+        <!--Changed classes of labels to subtitles is-4
           Added "input" and "is-hovered" to input classes-->
-      <div class="form-group">
-        <label for="title" class="subtitle is-4" width="50%">Game Title:</label>
-        <input class="input is-hovered form-input" type="text" id="title" name="game-title" placeholder="Title" />
-      </div>
-
-    <!--stylization. A dropdown menu for selecting the "publisher/category"-->
-      <div class="form-group">
-        <label class="subtitle is-4" for="project-funding">Category:</label>
-        <div class="select">
-          <select name="condition" id="category">
-            <option>Select Category</option>
-            <option value="Nintendo">Nintendo</option>
-            <option value="Sony">Sony</option>
-            <option value="Microsoft">Microsoft</option>
-            <option value="Sega">Sega</option>
-            <option value="Square Enix">Square Enix</option>
-            <option value="Bandai Namco">Bandai Namco</option>
-          </select>
+        <div class="form-group m-2">
+          <label for="title" class="subtitle is-4" width="50%">Game Title:</label>
+          <input class="input is-hovered form-input" type="text" id="title" name="game-title" placeholder="Title" />
         </div>
-      </div>
 
-
-
-    <!--stylization. A dropdown menu for selecting the genre-->
-      <div class="form-group">
-        <label class="subtitle is-4" for="project-funding">Genre:</label>
-        <div class="select">
-          <select name="condition" id="genre">
-            <option>Select Genre</option>
-            <option value="Action">Action</option>
-            <option value="Adventure">Adventure</option>
-            <option value="RPG">RPG</option>
-            <option value="Simulation">Simulation</option>
-            <option value="Sports">Sports</option>
-            <option value="Platformer">Platformer</option>
-            <option value="Racing">Racing</option>
-            <option value="Shooter">Shooter</option>
-            <option value="Open World">Open World</option>
-            <option value="Strategy">Strategy</option>
-          </select>
+        <!--stylization. A dropdown menu for selecting the "publisher/category"-->
+        <div class="form-group m-2">
+          <label class="subtitle is-4" for="project-funding">Category:  </label>
+          <div class="select is-small">
+            <select name="condition" id="category">
+              <option>Select Category</option>
+              <option value="Nintendo">Nintendo</option>
+              <option value="Sony">Sony</option>
+              <option value="Microsoft">Microsoft</option>
+              <option value="Sega">Sega</option>
+              <option value="Square Enix">Square Enix</option>
+              <option value="Bandai Namco">Bandai Namco</option>
+            </select>
+          </div>
         </div>
-      </div>
 
 
 
-    <!--A dropdown menu for selecting the genre-->
-      <div class="form-group">
-        <label class="subtitle is-4" for="project-funding">System:</label>
-        <div class="select">
-          <select name="condition" id="system">
-            <option>Select System</option>
-            <option value="NES">NES</option>
-            <option value="SNES">SNES</option>
-            <option value="N64">N64</option>
-            <option value="Gamecube">Gamecube</option>
-            <option value="Wii">Wii</option>
-            <option value="Gameboy">Gameboy/Color</option>
-            <option value="Gameboy Advance">Gameboy Advance</option>
-            <option value="DS">DS</option>
-            <option value="3DS">3DS</option>
-            <option value="PS1">PS1</option>
-            <option value="PS2">PS2</option>
-            <option value="PSP">PSP</option>
-            <option value="PS3">PS3</option>
-            <option value="PS4">PS4</option>
-            <option value="Xbox">Xbox</option>
-            <option value="Xbox 360">Xbox 360</option>
-            <option value="Sega Genesis">Sega Genesis</option>
-          </select>
+        <!--stylization. A dropdown menu for selecting the genre-->
+        <div class="form-group m-2">
+          <label class="subtitle is-4" for="project-funding">Genre: </label>
+          <div class="select is-small">
+            <select name="condition" id="genre">
+              <option>Select Genre</option>
+              <option value="Action">Action</option>
+              <option value="Adventure">Adventure</option>
+              <option value="RPG">RPG</option>
+              <option value="Simulation">Simulation</option>
+              <option value="Sports">Sports</option>
+              <option value="Platformer">Platformer</option>
+              <option value="Racing">Racing</option>
+              <option value="Shooter">Shooter</option>
+              <option value="Open World">Open World</option>
+              <option value="Strategy">Strategy</option>
+            </select>
+          </div>
         </div>
-      </div>
 
-    <!--Andy's stylization. A dropdown menu for selecting the genre-->
-      <div class="form-group">
-        <label class="subtitle is-4" for="project-funding">Condition:</label>
-        <div class="select">
-          <select name="condition" id="condition">
-            <option>Choose Condition</option>
-            <option value="Loose">Loose</option>
-            <option value="(CIB) Complete In Box">(CIB) Complete In Box</option>
-            <option value="Brand New">Brand New</option>
-          </select>
+
+
+        <!--A dropdown menu for selecting the genre-->
+        <div class="form-group m-2">
+          <label class="subtitle is-4" for="project-funding">System:  </label>
+          <div class="select is-small">
+            <select name="condition" id="system">
+              <option>Select System</option>
+              <option value="NES">NES</option>
+              <option value="SNES">SNES</option>
+              <option value="N64">N64</option>
+              <option value="Gamecube">Gamecube</option>
+              <option value="Wii">Wii</option>
+              <option value="Gameboy">Gameboy/Color</option>
+              <option value="Gameboy Advance">Gameboy Advance</option>
+              <option value="DS">DS</option>
+              <option value="3DS">3DS</option>
+              <option value="PS1">PS1</option>
+              <option value="PS2">PS2</option>
+              <option value="PSP">PSP</option>
+              <option value="PS3">PS3</option>
+              <option value="PS4">PS4</option>
+              <option value="Xbox">Xbox</option>
+              <option value="Xbox 360">Xbox 360</option>
+              <option value="Sega Genesis">Sega Genesis</option>
+            </select>
+          </div>
         </div>
-      </div>
 
-      {{!-- This is the Price section --}}
-      <div class="form-group">
-        <label class="subtitle is-4" for="project-funding">Price:</label>
-        <input class="input is-hovered form-input" type="number" id="price" name="game-price" placeholder="$" />
-      </div>
+        <!--Andy's stylization. A dropdown menu for selecting the genre-->
+        <div class="form-group m-2">
+          <label class="subtitle is-4" for="project-funding">Condition: </label>
+          <div class="select is-small">
+            <select name="condition" id="condition">
+              <option>Choose Condition</option>
+              <option value="Loose">Loose</option>
+              <option value="(CIB) Complete In Box">(CIB) Complete In Box</option>
+              <option value="Brand New">Brand New</option>
+            </select>
+          </div>
+        </div>
 
-      {{!-- This is the description section --}}
-      <div class="form-group">
-        <label for="project-desc" class="subtitle is-4">Description:</label>
-        <textarea class="input is-hovered form-input" id="desc" name="game-desc" placeholder="e.g. This game was used when..."></textarea>
-      </div>
+        {{!-- This is the Price section --}}
+        <div class="form-group m-2 is-small">
+          <label class="subtitle is-4" for="project-funding">Price: </label>
+          <input class="input is-hovered form-input" type="number" id="price" name="game-price" placeholder="$" />
+        </div>
 
-      <div class="form-group">
-        <button type="submit" class="button is-info btn btn-primary">Create</button>
-      </div>
-      
-    </form>
+        {{!-- This is the description section --}}
+        <div class="form-group m-2">
+          <label for="project-desc" class="subtitle is-4">Description:  </label>
+          <textarea class="textarea is-hovered form-input" rows="8" id="desc" name="game-desc" placeholder="e.g. This game was used when..."></textarea>
+        </div>
 
+        <br>
+
+        <div class="form-group">
+          <button type="submit" class="button is-info btn btn-primary">Create</button>
+        </div>
+      </form>
     </div>
-
   </div>
-
 </div>
 
 <script src="./js/posting.js"></script>
