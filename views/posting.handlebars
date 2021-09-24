@@ -1,15 +1,15 @@
 <!--Creating a column half of page for an image, or something to fill space
     Currently not working as expected. Will resolve later-->
-<div class="column is-half">
+<div class="column is-half block">
         
 </div>
 
-<div class="columns is-centered col-md-6">
+<div class="columns is-centered col-md-6 block">
   <!--Making listing half of page to the right-->
-  <div class="column is-half">
+  <div class="column is-half block">
 
   <!--Placed listing in box for style-->
-    <div class="box">
+    <div class="box block">
 
       <h3 class="title is-1">Create a Listing:</h3>
 
@@ -17,13 +17,13 @@
 
         <!--Changed classes of labels to subtitles is-4
           Added "input" and "is-hovered" to input classes-->
-      <div class="form-group">
+      <div class="form-group block">
         <label for="title" class="subtitle is-4" width="50%">Game Title:  </label>
         <input class="input is-hovered form-input" type="text" style="width: 30%;" id="title" name="game-title" placeholder="Title" />
       </div>
 
     <!--stylization. A dropdown menu for selecting the "publisher/category"-->
-      <div class="form-group">
+      <div class="form-group block">
         <label class="subtitle is-4" for="project-funding">Category:  </label>
         <div class="select">
           <select name="condition" id="category">
@@ -42,7 +42,7 @@
 
 
     <!--stylization. A dropdown menu for selecting the genre-->
-      <div class="form-group">
+      <div class="form-group block">
         <label class="subtitle is-4" for="project-funding">Genre:   </label>
         <div class="select">
           <select name="condition" id="genre">
@@ -65,7 +65,7 @@
 
 
         <!--A dropdown menu for selecting the genre-->
-        <div class="form-group m-2">
+        <div class="form-group m-2 block">
           <label class="subtitle is-4" for="project-funding">System:   </label>
           <div class="select">
             <select name="condition" id="system">
@@ -92,7 +92,7 @@
         </div>
 
         <!--Andy's stylization. A dropdown menu for selecting the genre-->
-        <div class="form-group m-2">
+        <div class="form-group m-2 block">
           <label class="subtitle is-4" for="project-funding">Condition:   </label>
           <div class="select">
             <select name="condition" id="condition">
@@ -105,20 +105,20 @@
         </div>
 
         {{!-- This is the Price section --}}
-        <div class="form-group m-2 is-small">
+        <div class="form-group m-2 is-small block">
           <label class="subtitle is-4" for="project-funding">Price:   </label>
           <input class="input is-hovered form-input" type="number" style="width: 30%;" id="price" name="game-price" placeholder="$" />
         </div>
 
         {{!-- This is the description section --}}
-        <div class="form-group m-2">
+        <div class="form-group m-2 block">
           <label for="project-desc" class="subtitle is-4">Description:  </label>
           <textarea class="textarea is-hovered form-input" rows="8" id="desc" name="game-desc" placeholder="e.g. This game was used when..."></textarea>
         </div>
 
         <br>
 
-        <div class="form-group">
+        <div class="form-group block">
           <button type="submit" class="button is-info btn btn-primary">Create</button>
         </div>
       </form>
