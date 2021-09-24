@@ -2,21 +2,21 @@
 <div id="main">
   <div class="columns">
 
-    <div class="column is-one-quarter has-text-centered">
+    <div class="column is-one-quarter has-text-centered block">
 
       {{!-- Categories of games  --}}
       <p class="title is-3 is-spaced has-text-grey-dark">Categories</p>
-      <div class="dropdown is-hoverable">
-  <div class="dropdown-trigger">
+      <div class="dropdown is-hoverable block">
+  <div class="dropdown-trigger block">
     <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
       <span>Select a Category</span>
       <span class="icon is-small">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
       </span>
     </button>
   </div>
-  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-    <div class="dropdown-content">
+  <div class="dropdown-menu block" id="dropdown-menu4" role="menu">
+    <div class="dropdown-content block">
       <div class="dropdown-item">
 
       <a href="/category/Nintendo" class="dropdown-item">Nintendo</a>
@@ -34,12 +34,12 @@
   
       {{!-- Genre of games  --}}
       <p class="title is-3 is-spaced has-text-grey-dark">Genre</p>
-      <div class="dropdown is-hoverable">
+      <div class="dropdown is-hoverable block">
   <div class="dropdown-trigger">
     <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
       <span>Select a Genre</span>
       <span class="icon is-small">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -66,12 +66,12 @@
       
       {{!-- Systems for the games  --}}
       <p class="title is-3 is-spaced has-text-grey-dark">System</p>
-      <div class="dropdown is-hoverable">
+      <div class="dropdown is-hoverable block">
   <div class="dropdown-trigger">
     <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
       <span>Select a System</span>
       <span class="icon is-small">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -105,12 +105,12 @@
       
       {{!-- Condition of games  --}}
       <p class="title is-3 is-spaced has-text-grey-dark">Condition</p>
-      <div class="dropdown is-hoverable">
+      <div class="dropdown is-hoverable block">
   <div class="dropdown-trigger">
     <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
       <span>Game Condition</span>
       <span class="icon is-small">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -129,12 +129,12 @@
      
     </div>
 
-    <div class="column">
+    <div class="column block">
       <h2 class="title is-3 has-text-centered	">Listings</h2>
       
-      <div class="columns is-multiline" id="listingpage">
+      <div class="columns is-multiline block" id="listingpage">
         {{#each posts}}
-        <div class="column is-one-quarter" id="card">
+        <div class="column is-one-quarter block" id="card">
           <h2>
             <a href='/post/{{id}}'>{{title}}</a>
           </h2>
