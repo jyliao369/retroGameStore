@@ -16,7 +16,7 @@ Have some games you want to get rid of, but are tired of game stores lowballing 
 
 ## User Story
 
-```md
+
 As a video game enthusiast...
 I would like to be able to purchase video games from various generations and not just the most recent consoles or games.
 I would like to buy video games from different publishers and for different consoles.
@@ -27,7 +27,7 @@ I want a marketplace to sell at a reasonable price.
 I want to be able to set my own price
 
 Our goal at RGMarket is to give video game enthusiasts, the option to purchase or sell video games, for or from their own video game collections.
-```
+
 ## Challenges
 Routing Handlebars to Database
 Making sure using proper syntax
@@ -62,6 +62,6 @@ Learning to use Bulma CSS Framework
 
 ## Questions
 Please Feel free to contact us at:
-jyliao369@gmail.com 
-nickhyman456@gmail.com 
+jyliao369@gmail.com;
+nickhyman456@gmail.com; 
 AndyDChoo@gmail.com
