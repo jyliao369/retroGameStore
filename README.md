@@ -3,9 +3,9 @@ A communal marketplace for purchasing and selling video games.
 
 ## Table of Contents
   * [Description](#description)
-  * [Installation](#instaInstallation For localhostllation)
+  * [Installation](#Installation)
   * [Challenges](#challenges)
-  * [Deployed](#Deployed Page & Git repository)
+  * [Deployed](#Deployed)
   * [License](#license)
   * [Questions](#questions)
 
@@ -45,7 +45,7 @@ Using Insomnia to check on CRUD functions
 Creating an account system
 Learning to use Bulma CSS Framework
 
-## Installation For localhost
+## Installation
 * npm install
 * mysql -u root -p
 * source db/schema.sql
@@ -53,8 +53,10 @@ Learning to use Bulma CSS Framework
 * npm run seed 
 * npm run start
 
-## Deployed Page & Git repository
+## Deployed
 [RGMarket] (https://retro-game-market.herokuapp.com/)
+
+## GitHub
 [GitRepo] (https://github.com/Andydchoo/Retro-Game-Market)
 
 ## License
