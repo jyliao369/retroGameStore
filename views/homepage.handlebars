@@ -61,7 +61,29 @@
       <option><a href="/condition/Brand New">Brand New</a></option>
     </select>
   </div>
+</div>
+<div class="listingCont">
+  <div class="listings">
+    {{#each posts}}
+      <div class="card">
+        <a href="/post/{{id}}">
+          <div class="listingImage">
+            IMAGE
+          </div>
+          <div class="listingInfo">
+            <h2>{{title}}</h2>
+            <p>System: {{system}}</p>
+            <P>Category: {{category}}</P>
+            <p>Condition: {{condition}}</p>
+            <p>Genre: {{genre}}</p>
+            <p>Description: {{description}}</p>
+            <p>Price: {{price}}$</p>
+          </div>
 
+        </a>
+      </div>
+    {{/each}}
+  </div>
 </div>
 
 <br />
@@ -70,7 +92,7 @@
 <br />
 <br />
 
-<div id="main">
+{{!-- <div id="main">
   <div class="columns">
 
     {{!-- <div class="column is-one-quarter has-text-centered block">
@@ -214,7 +236,7 @@
         </div>
       </div>
 
-    </div> --}}
+    </div> --
 
     <div class="column block">
       <h2 class="title is-3 has-text-centered">Listings</h2>
@@ -238,4 +260,4 @@
     </div>
 
   </div>
-</div>
+</div> --}}
