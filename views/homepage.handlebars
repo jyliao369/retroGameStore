@@ -1,11 +1,82 @@
 <!--Two columns. Left is 1/4 size containing the game categories. Right is 3/4 containing the front page of listings-->
+<div class="categories">
+  <div>
+    <label>Publisher:</label>
+    <select>
+      <option><a href="/category/Nintendo">Nintendo</a></option>
+      <option><a href="/category/Sony">Sony</a></option>
+      <option><a href="/category/Microsoft">Microsoft</a></option>
+      <option><a href="/category/Sega">Sega</a></option>
+      <option><a href="/category/Square Enix">Square Enix</a></option>
+      <option><a href="/category/Bandai Namco">Bandai Namco</a></option>
+      <option><a href="/category/Other">Other</a></option>
+    </select>
+  </div>
+
+  <div>
+    <label>Genre:</label>
+    <select>
+      <option><a href="/genre/Action">Action</a></option>
+      <option><a href="/genre/Adventure">Adventure</a></option>
+      <option><a href="/genre/RPG">RPG</a></option>
+      <option><a href="/genre/Simulation">Simulation</a></option>
+      <option><a href="/genre/Sports">Sports</a></option>
+      <option><a href="/genre/Platformer">Platformer</a></option>
+      <option><a href="/genre/Racing">Racing</a></option>
+      <option><a href="/genre/Shooter">Shooter</a></option>
+      <option><a href="/genre/Open World">Open World</a></option>
+      <option><a href="/genre/Strategy">Strategy</a></option>
+      <option><a href="/genre/Other">Other</a></option>
+    </select>
+  </div>
+
+  <div>
+    <label>System:</label>
+    <select>
+      <option><a href="/system/NES">NES</a></option>
+      <option><a href="/system/SNES">SNES</a></option>
+      <option><a href="/system/N64">N64</a></option>
+      <option><a href="/system/Gamecube">Gamecube</a></option>
+      <option><a href="/system/Wii">Wii</a></option>
+      <option><a href="/system/Gameboy">Gameboy</a></option>
+      <option><a href="/system/Gameboy Advance">Gameboy Advance</a></option>
+      <option><a href="/system/DS">DS</a></option>
+      <option><a href="/system/3DS">3DS</a></option>
+      <option><a href="/system/PS1">PS1</a></option>
+      <option><a href="/system/PS2">PS2</a></option>
+      <option><a href="/system/PS3">PS3</a></option>
+      <option><a href="/system/PS4">PS4</a></option>
+      <option><a href="/system/Xbox">Xbox</a></option>
+      <option><a href="/system/Xbox360">Xbox 360</a></option>
+      <option><a href="/system/Sega Genesis">Sega Genesis</a></option>
+      <option><a href="/system/Other">Other</a></option>
+    </select>
+  </div>
+
+  <div>
+    <label>Condition:</label>
+    <select>
+      <option><a href="/condition/CIB - Good Condition">CIB (Complete In Box)</a></option>
+      <option><a href="/condition/Loose">Loose</a></option>
+      <option><a href="/condition/Brand New">Brand New</a></option>
+    </select>
+  </div>
+
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
 <div id="main">
   <div class="columns">
 
-    <div class="column is-one-quarter has-text-centered block">
+    {{!-- <div class="column is-one-quarter has-text-centered block">
 
       {{! Categories of games  }}
-      <p class="title is-3 is-spaced has-text-grey-dark">Categories</p>
+      {{! <p class="title is-3 is-spaced has-text-grey-dark">Categories</p>
       <div class="dropdown is-hoverable block">
         <div class="dropdown-trigger block">
           <button
@@ -21,24 +92,24 @@
         </div>
         <div class="dropdown-menu block" id="dropdown-menu4" role="menu">
           <div class="dropdown-content block">
-            <div class="dropdown-item">
+            <div>
 
-              <a href="/category/Nintendo" class="dropdown-item">Nintendo</a>
-              <a href="/category/Sony" class="dropdown-item">Sony</a>
-              <a href="/category/Microsoft" class="dropdown-item">Microsoft</a>
-              <a href="/category/Sega" class="dropdown-item">Sega</a>
-              <a href="/category/Square Enix" class="dropdown-item">Square Enix</a>
-              <a href="/category/Bandai Namco" class="dropdown-item">Bandai
+              <a href="/category/Nintendo">Nintendo</a>
+              <a href="/category/Sony">Sony</a>
+              <a href="/category/Microsoft">Microsoft</a>
+              <a href="/category/Sega">Sega</a>
+              <a href="/category/Square Enix">Square Enix</a>
+              <a href="/category/Bandai Namco">Bandai
                 Namco</a>
-              <a href="/category/Other" class="dropdown-item">Other</a>
+              <a href="/category/Other">Other</a>
 
             </div>
           </div>
         </div>
-      </div>
+      </div> }}
 
       {{! Genre of games  }}
-      <p class="title is-3 is-spaced has-text-grey-dark">Genre</p>
+      {{! <p class="title is-3 is-spaced has-text-grey-dark">Genre</p>
       <div class="dropdown is-hoverable block">
         <div class="dropdown-trigger">
           <button
@@ -54,27 +125,27 @@
         </div>
         <div class="dropdown-menu" id="dropdown-menu4" role="menu">
           <div class="dropdown-content">
-            <div class="dropdown-item">
+            <div>
 
-              <a href="/genre/Action" class="dropdown-item">Action</a>
-              <a href="/genre/Adventure" class="dropdown-item">Adventure</a>
-              <a href="/genre/RPG" class="dropdown-item">RPG</a>
-              <a href="/genre/Simulation" class="dropdown-item">Simulation</a>
-              <a href="/genre/Sports" class="dropdown-item">Sports</a>
-              <a href="/genre/Platformer" class="dropdown-item">Platformer</a>
-              <a href="/genre/Racing" class="dropdown-item">Racing</a>
-              <a href="/genre/Shooter" class="dropdown-item">Shooter</a>
-              <a href="/genre/Open World" class="dropdown-item">Open World</a>
-              <a href="/genre/Strategy" class="dropdown-item">Strategy</a>
-              <a href="/genre/Other" class="dropdown-item">Other</a>
+              <a href="/genre/Action">Action</a>
+              <a href="/genre/Adventure">Adventure</a>
+              <a href="/genre/RPG">RPG</a>
+              <a href="/genre/Simulation">Simulation</a>
+              <a href="/genre/Sports">Sports</a>
+              <a href="/genre/Platformer">Platformer</a>
+              <a href="/genre/Racing">Racing</a>
+              <a href="/genre/Shooter">Shooter</a>
+              <a href="/genre/Open World">Open World</a>
+              <a href="/genre/Strategy">Strategy</a>
+              <a href="/genre/Other">Other</a>
 
             </div>
           </div>
         </div>
-      </div>
+      </div> }}
 
       {{! Systems for the games  }}
-      <p class="title is-3 is-spaced has-text-grey-dark">System</p>
+      {{! <p class="title is-3 is-spaced has-text-grey-dark">System</p>
       <div class="dropdown is-hoverable block">
         <div class="dropdown-trigger">
           <button
@@ -90,31 +161,30 @@
         </div>
         <div class="dropdown-menu" id="dropdown-menu4" role="menu">
           <div class="dropdown-content">
-            <div class="dropdown-item">
+            <div>
 
-              <a href="/system/NES" class="dropdown-item">NES</a>
-              <a href="/system/SNES" class="dropdown-item">SNES</a>
-              <a href="/system/N64" class="dropdown-item">N64</a>
-              <a href="/system/Gamecube" class="dropdown-item">Gamecube</a>
-              <a href="/system/Wii" class="dropdown-item">Wii</a>
-              <a href="/system/Gameboy" class="dropdown-item">Gameboy</a>
-              <a href="/system/Gameboy Advance" class="dropdown-item">Gameboy
-                Advance</a>
-              <a href="/system/DS" class="dropdown-item">DS</a>
-              <a href="/system/3DS" class="dropdown-item">3DS</a>
-              <a href="/system/PS1" class="dropdown-item">PS1</a>
-              <a href="/system/PS2" class="dropdown-item">PS2</a>
-              <a href="/system/PS3" class="dropdown-item">PS3</a>
-              <a href="/system/PS4" class="dropdown-item">PS4</a>
-              <a href="/system/Xbox" class="dropdown-item">Xbox</a>
-              <a href="/system/Xbox360" class="dropdown-item">Xbox 360</a>
-              <a href="/system/Sega Genesis" class="dropdown-item">Sega Genesis</a>
-              <a href="/system/Other" class="dropdown-item">Other</a>
+              <a href="/system/NES">NES</a>
+              <a href="/system/SNES">SNES</a>
+              <a href="/system/N64">N64</a>
+              <a href="/system/Gamecube">Gamecube</a>
+              <a href="/system/Wii">Wii</a>
+              <a href="/system/Gameboy">Gameboy</a>
+              <a href="/system/Gameboy Advance">Gameboy Advance</a>
+              <a href="/system/DS">DS</a>
+              <a href="/system/3DS">3DS</a>
+              <a href="/system/PS1">PS1</a>
+              <a href="/system/PS2">PS2</a>
+              <a href="/system/PS3">PS3</a>
+              <a href="/system/PS4">PS4</a>
+              <a href="/system/Xbox">Xbox</a>
+              <a href="/system/Xbox360">Xbox 360</a>
+              <a href="/system/Sega Genesis">Sega Genesis</a>
+              <a href="/system/Other">Other</a>
 
             </div>
           </div>
         </div>
-      </div>
+      </div> }}
 
       {{! Condition of games  }}
       <p class="title is-3 is-spaced has-text-grey-dark">Condition</p>
@@ -133,21 +203,18 @@
         </div>
         <div class="dropdown-menu" id="dropdown-menu4" role="menu">
           <div class="dropdown-content">
-            <div class="dropdown-item">
+            <div>
 
-              <a
-                href="/condition/CIB - Good Condition"
-                class="dropdown-item"
-              >CIB (Complete In Box)</a>
-              <a href="/condition/Loose" class="dropdown-item">Loose</a>
-              <a href="/condition/Brand New" class="dropdown-item">Brand New</a>
+              <a href="/condition/CIB - Good Condition">CIB (Complete In Box)</a>
+              <a href="/condition/Loose">Loose</a>
+              <a href="/condition/Brand New">Brand New</a>
 
             </div>
           </div>
         </div>
       </div>
 
-    </div>
+    </div> --}}
 
     <div class="column block">
       <h2 class="title is-3 has-text-centered">Listings</h2>

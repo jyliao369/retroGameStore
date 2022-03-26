@@ -1,7 +1,6 @@
 body {
   margin: 0px;
   text-decoration: none;
-  background: #003b59;
 }
 .navbar {
   display: flex;
@@ -32,4 +31,17 @@ body {
   padding: 10px;
   border-radius: 30px;
   border: none;
+}
+.categories {
+  display: flex;
+  justify-content: space-around;
+}
+.categories label {
+  font-size: 20px;
+}
+.categories select {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

@@ -14,7 +14,8 @@
   <header>
     <!--Nav bar containing website logo, searchbar, create listing, sign up, and log in buttons. Uses bootstrap+bulma for styling-->
     <nav class="navbar">
-      <a href="/"><img src="https://media.discordapp.net/attachments/468853546037805058/890368757594218546/RGMarket.jpeg" width="300" height="65"></a>
+      {{!-- <a href="/"><img src="https://media.discordapp.net/attachments/468853546037805058/890368757594218546/RGMarket.jpeg" width="300" height="65"></a> --}}
+      <a href="/"><h1>Retron, Retros</h1></a>
       <input class="search" placeholder="Search..."></input>
       <div class="buttons">
         <!--Conditional for if user is not signed in-->
@@ -32,20 +33,15 @@
     </nav>
   </header>
 
-<!--Main body for rendering-->
+  <!--Main body for rendering-->
   <main>
-    <div class="has-background-white-ter">
-      <!-- Render the sub layout -->
-      {{{ body }}}
-    </div>
-    
+    {{{ body }}}
   </main>
-<!--Footer of website-->
-    <footer>
+
+  <!--Footer of website-->
+  <footer>
       
-    </footer>
-    
-  </div>
+  </footer>
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
