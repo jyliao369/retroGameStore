@@ -5,55 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    {{!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/> --}}
     <title>RGMarket</title>
 </head>
 
 <body>
   <header>
     <!--Nav bar containing website logo, searchbar, create listing, sign up, and log in buttons. Uses bootstrap+bulma for styling-->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="container">
-        <div class="navbar-brand">
-          <a href="/"><img src="https://media.discordapp.net/attachments/468853546037805058/890368757594218546/RGMarket.jpeg" width="300" height="65"></a>
+    <nav class="navbar">
+      <a href="/"><img src="https://media.discordapp.net/attachments/468853546037805058/890368757594218546/RGMarket.jpeg" width="300" height="65"></a>
+      <input class="search" placeholder="Search..."></input>
+      <div class="buttons">
+        <!--Conditional for if user is not signed in-->
+        {{#if logged_in}}
         
-          <!--Navbar containing logo, searchbar, create listing, login, and signup buttons-->
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div class="navbar-item" style="width: 52%;">
-          <input class="input is-rounded" style="width: 100%;" type="text" placeholder="Search...">
-        </div>
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-
-                <!--Conditional for if user is not signed in-->
-                {{#if logged_in}}
-                <a class="button is-info" href="/posting" id="post">
-                  <strong>Create Listing</strong>
-                </a>
-                <a class="button is-light" href="/profile">
-                  Profile
-                </a>
-                <a class="button is-warning" id="logout">
-                  Logout
-                </a>
-                {{else}}
-                {{!-- If you are not logged in you can either log in or log out --}}
-                <a class="button is-primary" href="/signup" id="signup">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is light" href="/login">Login</a>
-                {{/if}}
-              </div>
-            </div>
-          </div>
-        </div>
+        <a href="/posting"><button class="postBtn">Create Listing</button></a>
+        <a href="/profile"><button class="profileBtn">Profile</button></a>
+        <a><button class="logoutBtn" id="logout">Logout</button></a>
+        {{else}}
+        {{!-- If you are not logged in you can either log in or log out --}}
+        <a href="/signup"><button class="signupBtn">Sign up</button></a>
+        <a href="/login"><button class="loginBtn">Login</button></a>
+        {{/if}}
       </div>
     </nav>
   </header>
