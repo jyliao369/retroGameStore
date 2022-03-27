@@ -9,8 +9,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
-  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 .search {
   width: 300px;
@@ -80,3 +80,49 @@ body {
 .listingInfo {
   margin: 10px;
 }
+
+/* LOGIN & SIGNUP PAGE */
+.loginCont,
+.signCont {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.loginForm,
+.signForm {
+  display: flex;
+  width: 375px;
+  border-style: solid;
+  flex-direction: column;
+  align-items: center;
+}
+.loginForm h2,
+.signForm h2 {
+  margin-top: 55px;
+  margin-bottom: 50px;
+}
+.user,
+.email,
+.pass {
+  width: 250px;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+.submitBtn {
+  width: 275px;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 120px;
+  border-radius: 25px;
+  border: none;
+}
+.noAcc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* SIGNUP PAGE */
