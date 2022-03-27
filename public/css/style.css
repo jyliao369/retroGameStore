@@ -101,9 +101,11 @@ body {
   margin-top: 55px;
   margin-bottom: 50px;
 }
-.user,
-.email,
-.pass {
+.user-sign,
+.email-sign,
+.pass-sign,
+.email-login,
+.pass-login {
   width: 250px;
   font-size: 15px;
   padding: 10px;
