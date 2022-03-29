@@ -169,3 +169,75 @@ body {
   margin-top: 50px;
   margin-bottom: 25px;
 }
+
+/* PROFILE SECTION */
+.profilePage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.listingsCont {
+  padding: 20px;
+  border-style: solid;
+  margin-right: 15px;
+}
+.listingsCont h2 {
+  margin-bottom: 10px;
+}
+.allListings {
+  display: flex;
+  flex-direction: column;
+}
+.updateFormCont {
+  padding: 20px;
+  border-style: solid;
+  margin-left: 15px;
+  height: 250px;
+}
+.updateForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  height: 100%;
+}
+.updateForm h2 {
+  margin-bottom: 10px;
+}
+.post {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  margin-bottom: 15px;
+}
+.infoSection {
+  display: flex;
+  flex-direction: column;
+}
+.generalCont {
+  display: flex;
+  flex-direction: row;
+}
+.generalInfo {
+  width: 275px;
+}
+.descInfo {
+  width: 350px;
+}
+.postImage {
+  width: 130px;
+  height: 130px;
+  border-style: solid;
+  margin: 5px;
+}
+.updateForm {
+  width: 350px;
+}
+.updateForm input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 15px;
+}

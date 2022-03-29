@@ -1,38 +1,102 @@
-<!-- Banner at top of screen -->
-<section class="hero is-info row">
+<div class="bannerHead">
+  <h1>RGMarket Profile</h1>
+  <h1>Welcome, {{username}}!</h1>
+</div>
+
+<div class="profilePage">
+  {{! ALL LISTINGS }}
+  <div class="listingsCont">
+
+    <h2>Your Listings:</h2>
+    {{#if posts.length}}
+      <div class="allListings">
+        {{#each posts as |post|}}
+          <div class="post">
+            <div class="postImage">
+            </div>
+            <div class="infoSection">
+              <h2>
+                <a href="/post/{{post.id}}">{{post.title}}</a>
+              </h2>
+              <div class="generalCont">
+                <div class="generalInfo">
+                  <p>Publisher: {{post.category}}</p>
+                  <p>Genre: {{post.genre}}</p>
+                  <p>System: {{post.system}}</p>
+                  <p>Condition: {{post.condition}}</p>
+                  <p>Price: ${{post.price}}</p>
+                </div>
+                <div class="descInfo">
+                  <p>Description: </p>
+                  <p>{{post.description}}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <button
+                class="button is-danger is-small btn btn-sm btn-danger new-post-form"
+                type="submit"
+                data-id="{{post.id}}"
+              >DELETE</button>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    {{/if}}
+  </div>
+
+  {{! UPDATE PROFILE }}
+  <div class="updateFormCont">
+    <form class="updateForm">
+      <h2>Update Account</h2>
+      <input class="userUpdate" placeholder="New Username" />
+      <input class="emailUpdate" placeholder="New E-Mail" />
+      <input class="passUpdate" placeholder="New Password" />
+      <button class="updateBtn">Update Account</button>
+    </form>
+  </div>
+</div>
+
+{{!-- <section class="hero is-info row">
   <div class="hero-body col-auto">
     <p class="title has-text-centered is-1">
-      RGMarket Profile
+
     </p>
     <p class="subtitle has-text-centered is-3">
-      Welcome, {{username}}!
+      Welcome,
+      {{username}}!
     </p>
   </div>
 </section>
 
-
 <div class="columns">
-  <!--Left Column. Contains listings-->
   <div class="column">
     <form class="box">
-      <div class="row mt-4" id='mainbody'>
+      <div class="row mt-4" id="mainbody">
 
         {{#if posts.length}}
-        <div class="col-md-6 posts-list">
-          
-          <h3 class="title is-3">Your Listings:</h3>
+          <div class="col-md-6 posts-list">
 
-          {{#each posts as |post|}}
-          <div class="row mb-2">
-            <div id="test" class="col-md-8">
-              <h4 class="subtitle is-5"><a href="/post/{{post.id}}">{{post.title}}</a></h4>
-            </div>
-            <div class="col-md-4">
-              <button class="button is-danger is-small btn btn-sm btn-danger new-post-form" type="submit" data-id="{{post.id}}">DELETE</button>
-            </div>
+            <h3 class="title is-3">Your Listings:</h3>
+
+            {{#each posts as |post|}}
+              <div class="row mb-2">
+                <div id="test" class="col-md-8">
+                  <h4 class="subtitle is-5"><a
+                      href="/post/{{post.id}}"
+                    >{{post.title}}</a></h4>
+                </div>
+                <div class="col-md-4">
+                  <button
+                    class="button is-danger is-small btn btn-sm btn-danger new-post-form"
+                    type="submit"
+                    data-id="{{post.id}}"
+                  >DELETE</button>
+                </div>
+              </div>
+            {{/each}}
           </div>
-          {{/each}}
-        </div>
         {{/if}}
 
       </div>
@@ -40,36 +104,38 @@
     </form>
 
   </div>
-  
 
-  <!--Right column. Contains profile settings-->
   <div class="column">
     <form class="box">
       <a class="title is-3">Change your password:</a>
-        <div class="field">
-          <label class="label">Email</label>
-            <div class="control">
-              <input class="input" type="email" placeholder="e.g. alex@example.com">
-            </div>
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input
+            class="input"
+            type="email"
+            placeholder="e.g. alex@example.com"
+          />
         </div>
+      </div>
 
-        <div class="field">
-          <label class="label">Current Password</label>
-            <div class="control">
-              <input class="input" type="password" placeholder="********">
-            </div>
+      <div class="field">
+        <label class="label">Current Password</label>
+        <div class="control">
+          <input class="input" type="password" placeholder="********" />
         </div>
+      </div>
 
-        <div class="field">
-          <label class="label">New Password</label>
-            <div class="control">
-              <input class="input" type="password" placeholder="********">
-            </div>
+      <div class="field">
+        <label class="label">New Password</label>
+        <div class="control">
+          <input class="input" type="password" placeholder="********" />
         </div>
+      </div>
 
-        <button class="button is-primary">Change password</button>
+      <button class="button is-primary">Change password</button>
     </form>
   </div>
-</div>
+</div> --}}
 
 <script src="./js/profile.js"></script>
