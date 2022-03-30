@@ -55,7 +55,7 @@ body {
 .listings {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-around;
   max-width: 75%;
 }
 .card {
@@ -180,6 +180,7 @@ body {
   padding: 20px;
   border-style: solid;
   margin-right: 15px;
+  width: 845px;
 }
 .listingsCont h2 {
   margin-bottom: 10px;
@@ -240,4 +241,46 @@ body {
   font-size: 15px;
   padding: 10px;
   margin-bottom: 15px;
+}
+
+/* INDIVIDUAL POST SITE */
+.postContainer {
+  display: flex;
+  justify-content: center;
+}
+.postContent {
+  display: flex;
+  flex-direction: row;
+}
+.postingImage {
+  border-style: solid;
+  margin: 0px;
+  width: 400px;
+  height: 400px;
+  margin-right: 100px;
+}
+.postInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 100px;
+}
+.postInfo h1 {
+  margin-bottom: 30px;
+}
+.postGenInfo {
+  margin-bottom: 25px;
+}
+.postGenInfo p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.postPrice {
+  margin-bottom: 30px;
+}
+.postPrice p {
+  font-size: 25px;
+}
+.postUser p {
+  font-size: 20px;
 }
