@@ -1,7 +1,8 @@
 <!--Two columns. Left is 1/4 size containing the game categories. Right is 3/4 containing the front page of listings-->
-<div class="categories">
+{{! <div class="categories">
   <div>
-    <label>Publisher:</label>
+    <a href="/category/Nintendo">Nintendo</a>
+    <label>Publisher</label>
     <select>
       <option><a href="/category/Nintendo">Nintendo</a></option>
       <option><a href="/category/Sony">Sony</a></option>
@@ -14,7 +15,7 @@
   </div>
 
   <div>
-    <label>Genre:</label>
+    <label>Genre</label>
     <select>
       <option><a href="/genre/Action">Action</a></option>
       <option><a href="/genre/Adventure">Adventure</a></option>
@@ -31,7 +32,7 @@
   </div>
 
   <div>
-    <label>System:</label>
+    <label>System</label>
     <select>
       <option><a href="/system/NES">NES</a></option>
       <option><a href="/system/SNES">SNES</a></option>
@@ -54,12 +55,87 @@
   </div>
 
   <div>
-    <label>Condition:</label>
+    <label>Condition</label>
     <select>
       <option><a href="/condition/CIB - Good Condition">CIB (Complete In Box)</a></option>
       <option><a href="/condition/Loose">Loose</a></option>
       <option><a href="/condition/Brand New">Brand New</a></option>
     </select>
+  </div>
+</div> }}
+
+<div class="filterBar">
+
+  <button class="clearBtn"><a href="/">Show All</a></button>
+
+  <div class="pubFilter">
+    <button class="pubBtn">Publisher</button>
+    <div class="pubListCont">
+      <div class="pubList">
+        <a href="/category/Nintendo">Nintendo</a>
+        <a href="/category/Sony">Sony</a>
+        <a href="/category/Microsoft">Microsoft</a>
+        <a href="/category/Sega">Sega</a>
+        <a href="/category/Square Enix">Square Enix</a>
+        <a href="/category/Bandai Namco">Bandai Namco</a>
+        <a href="/category/Other">Other</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="genreFilter">
+    <button class="genreBtn">Genre</button>
+    <div class="genreListCont">
+      <div class="genreList">
+        <a href="/genre/Action">Action</a>
+        <a href="/genre/Adventure">Adventure</a>
+        <a href="/genre/RPG">RPG</a>
+        <a href="/genre/Simulation">Simulation</a>
+        <a href="/genre/Sports">Sports</a>
+        <a href="/genre/Platformer">Platformer</a>
+        <a href="/genre/Racing">Racing</a>
+        <a href="/genre/Shooter">Shooter</a>
+        <a href="/genre/Open World">Open World</a>
+        <a href="/genre/Strategy">Strategy</a>
+        <a href="/genre/Other">Other</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="systemFilter">
+    <button class="systemBtn">System</button>
+    <div class="systemListCont">
+      <div class="systemList">
+        <a href="/system/NES">NES</a>
+        <a href="/system/SNES">SNES</a>
+        <a href="/system/N64">N64</a>
+        <a href="/system/Gamecube">Gamecube</a>
+        <a href="/system/Wii">Wii</a>
+        <a href="/system/Gameboy">Gameboy</a>
+        <a href="/system/Gameboy Advance">Gameboy Advance</a>
+        <a href="/system/DS">DS</a>
+        <a href="/system/3DS">3DS</a>
+        <a href="/system/PS1">PS1</a>
+        <a href="/system/PS2">PS2</a>
+        <a href="/system/PS3">PS3</a>
+        <a href="/system/PS4">PS4</a>
+        <a href="/system/Xbox">Xbox</a>
+        <a href="/system/Xbox360">Xbox 360</a>
+        <a href="/system/Sega Genesis">Sega Genesis</a>
+        <a href="/system/Other">Other</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="condFilter">
+    <button class="condBtn">Condition</button>
+    <div class="condListCont">
+      <div class="conditionList">
+        <a href="/condition/CIB - Good Condition">CIB (Complete In Box)</a>
+        <a href="/condition/Loose">Loose</a>
+        <a href="/condition/Brand New">Brand New</a>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -74,10 +150,10 @@
           <div class="listingInfo">
             <h2>{{title}}</h2>
             <p>System: {{system}}</p>
-            <P>Category: {{category}}</P>
-            <p>Condition: {{condition}}</p>
-            <p>Genre: {{genre}}</p>
-            <p>Description: {{description}}</p>
+            {{!-- <P>Category: {{category}}</P> --}}
+            {{!-- <p>Condition: {{condition}}</p>
+              <p>Genre: {{genre}}</p> --}}
+            {{!-- <p>Description: {{description}}</p> --}}
             <p>Price: {{price}}$</p>
           </div>
 
@@ -256,3 +332,5 @@
 
   </div>
 </div> --}}
+
+<script src="./js/homepage.js"></script>

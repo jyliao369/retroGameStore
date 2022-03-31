@@ -36,6 +36,75 @@ body {
   border-radius: 30px;
   border: none;
 }
+
+/* HOMEPAGE */
+.filterBar {
+  display: flex;
+  flex-direction: row;
+  background: #d4d4d4;
+}
+.pubFilter:hover .pubListCont {
+  display: block;
+}
+.genreFilter:hover .genreListCont {
+  display: block;
+}
+.systemFilter:hover .systemListCont {
+  display: block;
+}
+.condFilter:hover .condListCont {
+  display: block;
+}
+.pubFilter:hover .pubBtn {
+  background: #959595;
+}
+.genreFilter:hover .genreBtn {
+  background: #959595;
+}
+.systemFilter:hover .systemBtn {
+  background: #959595;
+}
+.condFilter:hover .condBtn {
+  background: #959595;
+}
+.clearBtn,
+.pubBtn,
+.genreBtn,
+.systemBtn,
+.condBtn {
+  width: 120px;
+  font-size: 17px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  background: #d4d4d4;
+}
+.clearBtn a {
+  text-decoration: none;
+}
+.pubList,
+.genreList,
+.systemList,
+.conditionList {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #dfdfdf;
+}
+.pubListCont,
+.genreListCont,
+.systemListCont,
+.condListCont {
+  display: none;
+}
+.pubList a,
+.genreList a,
+.systemList a,
+.conditionList a {
+  font-size: 17px;
+  padding: 10px 20px 20px 20px;
+  text-decoration: none;
+}
 .categories {
   display: flex;
   justify-content: space-around;
@@ -51,12 +120,14 @@ body {
 .listingCont {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 .listings {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 75%;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
 }
 .card {
   display: flex;
