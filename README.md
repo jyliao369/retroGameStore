@@ -1,6 +1,6 @@
 # Retro-Game-Market
 
-A communal marketplace for purchasing and selling video games.
+A communal marketplace for purchasing and selling video games. Specifcally this application is used to sell Retro type games, console systems, accessories, or broken systems for parts. Users can post items they want to sell and place the price the want to sell at without a middle man.
 
 ## Table of Contents
 
@@ -61,17 +61,23 @@ Learning to use Bulma CSS Framework
 
 ## Deployed
 
-[RGMarket] (https://retro-game-market.herokuapp.com/)
+[RGMarket]
 
 ## GitHub
 
-[GitRepo] (https://github.com/Andydchoo/Retro-Game-Market)
+[GitRepo] https://github.com/jyliao369/retroGameStore
 
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
 
+## Additional Info
+
+This application was a class project in a Web Developing Bootcamp. At the time, the project/application was considered incomplete with only a few functionalities added and the overall styling was incomplete as well. The project at its current state is being revamped to have and improve look and functionality and possibly have additional functionality added to make the application more user friendly and more user interactive.
+
+Originally a group project, the revision is now being revamped by a single individual with a large portion of the code being intact; just changed slightly for more simple use. The current project does not have a delpoyed site as it is still being worked on but does have access to a GitHub repo.
+
 ## Questions
 
-Please Feel free to contact us at:
+Please Feel free to contact me at:
 jyliao369@gmail.com;
