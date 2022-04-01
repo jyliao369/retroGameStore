@@ -9,9 +9,6 @@ const newPostHandler = async (event) => {
   const price = document.querySelector(".price").value.trim();
   const description = document.querySelector(".desc").value.trim();
 
-  console.log(title);
-  console.log(description);
-
   if (title && category && condition && price && description) {
     const response = await fetch(`/api/posts`, {
       method: "POST",
@@ -37,6 +34,12 @@ const newPostHandler = async (event) => {
   }
 };
 
+const imageUploader = async () => {
+  console.log("new image has been uploaded");
+};
+
 document
   .querySelector(".createPost")
   .addEventListener("submit", newPostHandler);
+
+document.querySelector(".imageAdd").addEventListener("change", imageUploader);
